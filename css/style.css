@@ -6,7 +6,6 @@
 
 body {
     background-color: #fff;
-    font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -21,9 +20,9 @@ h3 {
 
 }
 
-.titulo {
-    margin: 60px;
-    text-align: center;
+.inicio p {
+    font-weight: 600;
+    color: #535461;
 }
 
 a {
@@ -33,6 +32,12 @@ a {
 
 main {
     background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    margin-block: 2rem;
 }
 
 
@@ -43,6 +48,7 @@ main {
 nav {
     background-color: #da291c !important;
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-logo {
@@ -51,12 +57,16 @@ nav {
 }
 
 #navbarNav {
-    justify-content: center;
+    justify-content: end;
 }
 
 .menu {
     gap: 1rem;
     justify-content: center;
+}
+
+nav a:hover {
+    color: #dddddd !important;
 }
 
 
@@ -70,16 +80,13 @@ footer {
     padding: 50px;
     margin-top: 80px;
     color: white;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-size: 10px;
+    text-align: center;
 }
 
 .footer-logo {
     width: 200px;
     height: 73px;
-    margin-bottom: 0.7rem;
 }
 
 .footer-redes {
@@ -96,13 +103,22 @@ footer {
     background-image: url(../img/inicio/banner-1336.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     display: flex;
-    padding-inline: 150px;
     align-items: center;
     color: #fff;
-    text-align: center;
     height: 100vh;
 }
+
+.btn-color {
+    background-color: #18608C !important;
+    color: #fff !important;
+}
+
+.btn-color:hover {
+    background-color: #104261 !important;
+}
+
 
 .banner h1 {
     padding-block: 1rem;
@@ -111,20 +127,12 @@ footer {
 .main-texto {
     display: flex;
     align-items: center;
-    /* otras propiedades de diseño */
 }
 
 
 .img {
     height: 400px;
-    width: 400px;
 
-}
-
-.seccion {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex
 }
 
 .item {
@@ -297,3 +305,23 @@ footer {
     grid-area: paragraph;
 }
 
+
+@media screen and (max-width: 991px){
+    .navbar-login {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media  (max-width: 500px) {
+    .btn-color {
+        background-color: #242F73 !important;
+    }
+}
