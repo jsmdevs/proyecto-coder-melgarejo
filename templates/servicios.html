@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-shadow navbar-dark">
             <div class="container-fluid">
                 <a href="#"><img class="navbar-logo" src="../img/logo-logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,7 +37,7 @@
                             <a class="nav-link" href="../templates/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../templates/contacto.html">Contacto</a>
+                            <a class="nav-link" href="../templates/ayuda.html">Ayuda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../templates/login.html">Iniciar Sesión <i class="bi bi-person"></i></a>
@@ -48,40 +49,40 @@
     </header>
     <main class="container">
         <div class="titulo">
-            <h1>Conexión para tu hogar</h1>
+            <h1>Internet para tu hogar</h1>
             <h3>Contratá el plan que mejor se adapte a tus necesidades</h3>
         </div>
-        <div class="cards__servicios">
-            <div class="card__servicios">
-                <h3 class="card__servicios__titulo"><strong>Internet</strong></h3>
-                <h2 class="card__servicios__subtitulo ">50Mb SIMÉTRICOS</h2>
-                <button class="card__servicios__boton">Ver más</button>
-
+        <div class="cards__servicios row justify-content-center">
+            <div class="card__servicios col-xs-12 col-md-5 col-lg-3 ">
+                <h3 class="card__servicios__titulo"><strong>Básico</strong></h3>
+                <p>50Mb simétrico   <i class="bi bi-arrow-down-up"></i></p>
+                <p>Soporte técnico virtual <i class="bi bi-headset"></i></p>
+                <button class="card__servicios__boton">Contratar</button>
             </div>
-            <div class="card__servicios">
-                <img class="card__servicios__imagen" src="../img/servicios/servicios.jpg" alt="">
-                <h3 class="card__servicios__titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                <p class="card__servicios__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
-                    quisquam! Molestiae consequatur maxime consequuntur in adipisci voluptatem, fugit, asperiores magnam
-                    illum voluptatibus, excepturi itaque ut delectus quod esse possimus dolores?</p>
-                <button class="card__servicios__boton">Ver más</button>
-
-
+            <div class="card__servicios col-xs-6 col-md-5 col-lg-3">
+                <h3 class="card__servicios__titulo"><strong>Premium</strong></h3>
+                <p>300Mb simétrico <i class="bi bi-arrow-down-up"></i></p>
+                <p>Modem de alto rendimiento <i class="bi bi-modem"></i></p>
+                <p>Red mesh <i class="bi bi-router"></i></p>
+                <p>Soporte técnico virtual <i class="bi bi-headset"></i></p>
+                <button class="card__servicios__boton">Contratar</button>
             </div>
-            <div class="card__servicios">
-                <img class="card__servicios__imagen" src="../img/servicios/servicios.jpg" alt="">
-                <h3 class="card__servicios__titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                <p class="card__servicios__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
-                    quisquam! Molestiae consequatur maxime consequuntur in adipisci voluptatem, fugit, asperiores magnam
-                    illum voluptatibus, excepturi itaque ut delectus quod esse possimus dolores?</p>
-                <button class="card__servicios__boton">Ver más</button>
+            <div class="card__servicios col-xs-6 col-md-6 col-lg-3">
+                <h3 class="card__servicios__titulo"><strong>Profesional</strong></h3>
+                <p>700Mb simétrico <i class="bi bi-arrow-down-up"></i></p>
+                <p>Modem de alto rendimiento <i class="bi bi-modem"></i></p>
+                <p>Instalación dedicada <i class="bi bi-tools"></i></p>
+                <p>Soporte técnico virtual <i class="bi bi-headset"></i></p>
+                <p>Soporte técnico prioritario <i class="bi bi-lightning-fill"></i></p>
+                <button class="card__servicios__boton">Contratar</button>
             </div>
+            
         </div>
         </main>
         <footer>
             <div>
                 <img class="footer-logo" src="../img/logo-logo.svg" alt="logo">
-                <p>Logo ©2023 - Todos los derechos reservados</p>
+                <p>Connect ©2023 - Todos los derechos reservados</p>
             </div>
             <div>
                 <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>
@@ -91,7 +92,7 @@
     </footer>
 
         <!--Scripts Bootstrap-->
-         <script src="./js/bootstrap.bundle.min.js"></script>
+         <script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
 

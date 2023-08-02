@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-shadow navbar-dark">
             <div class="container-fluid">
                 <a href="#"><img class="navbar-logo" src="../img/logo-logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,7 +37,7 @@
                             <a class="nav-link" href="../templates/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../templates/contacto.html">Contacto</a>
+                            <a class="nav-link" href="../templates/ayuda.html">Ayuda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../templates/login.html">Iniciar Sesión <i
@@ -48,24 +49,24 @@
         </nav>
     </header>
 
-    <div class="titulo">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <h3>Lorem ipsum dolor sit amet <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-    </div>
-
-    <main class="centrar">
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <main class="row justify-content-center">
+        <div class="card__login m-5 col-xs-10 col-sm-8 col-lg-5 col-xl-3">
+            <img class="login__logo" src="../img/logo-logo.svg" alt="">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-light">Registrarse</button>
+                    <button type="submit" class="btn btn-light">Iniciar Sesión</button>
+                </div>
+            </form>
+        </div>
 
         </div>
     </main>
@@ -82,7 +83,7 @@
     </footer>
 
     <!--Scripts Bootstrap-->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
