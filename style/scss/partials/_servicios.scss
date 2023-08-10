@@ -2,6 +2,7 @@
 
 .cards__servicios {
     gap: 1rem;
+    --bs-gutter-x: 0 !important;
     .card__servicios {
         border-radius: 7px;
         font-size: 0.8rem;
@@ -13,6 +14,7 @@
 
         .card__items {
             display: grid;
+            padding-inline: 1rem !important;
             grid-template-columns: 1fr 1fr;
         }
 

@@ -173,8 +173,6 @@ footer {
 }
 
 
-.cards__servicios {}
-
 .card__servicios {
     color: #535461;
     text-align: center;
@@ -188,8 +186,6 @@ footer {
     border-color: #da291c;
     box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.75);
 }
-
-.card_servicios::shadow {}
 
 .card_servicios p {
 

@@ -2,10 +2,16 @@
     footer {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+
 
         p {
-            text-align: start;
+            text-align: right;
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+        .redes {
+            margin-bottom: 0.4rem;
+        }
+    }

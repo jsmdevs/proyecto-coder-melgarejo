@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS Animations -->
+    <link rel="stylesheet" href="./css/aos.css">
     <title>Inicio</title>
 </head>
 
@@ -79,11 +81,11 @@
             </div>
         </div>
         <div class="container section">
-            <div class="section_content row">
+            <div class="section_content content-1 row">
                 <div class="col-md-6">
-                    <img class="img img-fluid" src="./img/inicio/undraw_online_re_x00h.svg" alt="">
+                    <img data-aos="fade-right" data-aos-duration="2000" class="img img-fluid" src="./img/inicio/undraw_online_re_x00h.svg" alt="">
                 </div>
-                <div class="main-texto col-md-6">
+                <div data-aos="fade-left" data-aos-duration="2000" class="main-texto col-md-6">
                     <div>
                         <h3>Velocidad y estabilidad</h3>
                         <p>En Connect sabemos que la velocidad y estabilidad son fundamentales para tus necesidades de
@@ -94,14 +96,11 @@
                     </div>
                 </div>
             </div>
-            <div class="section_content row">
-                <div class="img-mobile col-md-6">
-                    <img class="img img-fluid" class="section_content item" src="./img/inicio/undraw_gaming_re_cma2.svg"
-                        alt="">
-                </div>
-                <div class="main-texto col-md-6">
+            <div class="section_content content-2 row">
+                <div data-aos="fade-right" data-aos-duration="2000" class="main-texto col-md-6 text-2">
                     <div>
-                        <h3 class="animate__animated animate__fadeIn">Baja latencia ideal para juegos y tareas que necesiten rápidas respuestas</h3>
+                        <h3>Baja latencia ideal para juegos y tareas que
+                            necesiten rápidas respuestas</h3>
                         <p>En Connect, entendemos la importancia de una baja latencia cuando se trata de juegos.Sabemos
                             que cada milisegundo cuenta y puede marcar la diferencia entre la victoria y la derrota, el
                             éxito y la frustración.
@@ -112,17 +111,17 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div data-aos="fade-left" data-aos-duration="2000" class="col-md-6 img-2">
                     <img class="img img-desktop img-fluid" class="section_content item"
                         src="./img/inicio/undraw_gaming_re_cma2.svg" alt="">
                 </div>
             </div>
-            <div class="section_content row">
-                <div class="col-md-6">
+            <div class="section_content content-3 row">
+                <div data-aos="fade-right" data-aos-duration="2000" class="col-md-6">
                     <img class="img img-fluid" class="section_content" src="./img/inicio/undraw_server_cluster_jwwq.svg"
                         alt="">
                 </div>
-                <div class="main-texto col-md-6">
+                <div data-aos="fade-left" data-aos-duration="2000" class="main-texto col-md-6">
                     <div>
                         <h3>Soluciones informáticas avanzadas: cloud computing, servidores a medida y más</h3>
                         <p>En Connect, nos enorgullecemos de ofrecer una amplia gama de servicios de
@@ -136,15 +135,21 @@
             </div>
         </div>
     </main>
+
+    <!---------------------------------->
+    <!------------- Footer ------------->
+    <!---------------------------------->
+
     <footer>
-        <div>
-            <p>Connect ©2023</p>
-            <p>Todos los derechos reservados</p>
-        </div>
-        <div>
+        <div class="redes">
             <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>
             <a href="" class="footer-redes"><i class="bi bi-twitter"></i></a>
             <a href="" class="footer-redes"><i class="bi bi-instagram"></i></a>
+            <a href="" class="footer-redes"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="copy">
+            <p>Connect ©2023</p>
+            <p>Todos los derechos reservados</p>
         </div>
     </footer>
 
@@ -152,6 +157,12 @@
 
     <!--Scripts Bootstrap-->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations Scripts -->
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/aos-out.js"></script>
 </body>
 
 </html>

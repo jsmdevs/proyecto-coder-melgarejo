@@ -1,19 +1,23 @@
 @media screen and (max-width: 768px) {
-    .section_content {
-        text-align: center !important;
-        gap: 3rem;
+    .section {
+        .text-2 {
+            order: 2 !important;
+        }
 
-        .img-desktop {
-            display: none;
+        .img-2 {
+            order: 1 !important;
+        }
+
+        .section_content {
+            text-align: center !important;
+            gap: 3rem;
+
         }
     }
+
+
 }
 
-@media screen and (min-width: 768px){
-    .img-mobile {
-        display: none;
-    }
-}
 
 @media (max-width: 500px) {
     .btn-color {
