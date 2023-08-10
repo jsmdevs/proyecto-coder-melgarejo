@@ -1,0 +1,48 @@
+.nosotros__info {
+    h3 {
+        margin-top: 2rem;
+    }
+}
+
+.cards__nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+
+    .card__nosotros {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        .card__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "image title title"
+                "image cargo cargo"
+                "paragraph paragraph paragraph";
+            grid-gap: 10px;
+            padding: 10px;
+
+            .card__nosotros__imagen {
+                grid-area: image;
+                width: 100px;
+                border-radius: 50%;
+            }
+
+            .card__nosotros__h4 {
+                grid-area: title;
+            }
+            
+            .card__nosotros__parrafo {
+                grid-area: paragraph;
+            }
+            
+            .card__nosotros__cargo {
+                grid-area: cargo;
+            }
+        }
+    }
+}

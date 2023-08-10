@@ -1,0 +1,72 @@
+@import "./variables";
+
+.cards__servicios {
+    gap: 1rem;
+    .card__servicios {
+        border-radius: 7px;
+        font-size: 0.8rem;
+        padding: 0px !important;
+        border: solid;
+        border-width: 0.2rem;
+        border-color: $colorPrincipal;
+        box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.75);
+
+        .card__items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .spotify {
+            color: #1ED760 !important;
+        }
+
+        i {
+            font-size: 1.2rem;
+            color: $colorPrincipal;
+
+        }
+
+        p {
+
+            border-bottom: $colorPrincipal;
+        }
+
+        .card__servicios__titulo {
+            color: #fff;
+            padding: 1rem;
+            background-color: $colorPrincipal;
+        }
+
+        .card__servicios__precio {
+
+            display: flex;
+            justify-content: center;
+            p {
+                font-size: 2.5rem;
+                font-weight: 400 !important;
+            }
+        }
+
+        .card__servicios__button {
+            display: flex;
+            justify-content: center;
+
+            button {
+                color: white;
+                font-weight: 600;
+                background-color: $colorPrincipal;
+                border: none;
+                padding: 10px;
+                margin-bottom: 1rem;
+                border-radius: 7px;
+            }
+        }
+
+
+        .card__servicios__titulo,
+        .card__servicios__parrafo {
+            margin-bottom: 15px;
+        }
+    }
+
+}

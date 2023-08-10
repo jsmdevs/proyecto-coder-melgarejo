@@ -4,23 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style/scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/bootstrap/bootstrap.min.css">
     <title>Inicio</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-shadow navbar-dark">
+        <!-- Nav tabs -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a href="#"><img class="navbar-logo" src="../img/logo-logo.svg" alt=""></a>
+                <a href="../index.html"><img class="navbar-logo-solo" src="../img/connect-logo-solo.svg" alt=""></a>
+                <a href="../index.html"><img class="navbar-logo" src="../img/logo-logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
-                            <a class="nav-link active"href="../index.html">Inicio</a>
+                            <a class="nav-link active" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../templates/servicios.html">Servicios</a>
@@ -40,7 +45,8 @@
                             <a class="nav-link" href="../templates/ayuda.html">Ayuda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../templates/login.html">Iniciar Sesión <i class="bi bi-person"></i></a>
+                            <a class="nav-link m-0 nav-link-login" href="../templates/login.html">Iniciar Sesión <i
+                                    class="bi bi-person"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -48,91 +54,175 @@
         </nav>
     </header>
 
+    <!---------------------------------->
+    <!------------- Navbar ------------->
+    <!---------------------------------->
+
     <main class="container">
         <div class="titulo">
-            <h1>Un equipo de profesionales para una empresa profesional</h1>
-            <h3>Nuestra Familia</h3>
+            <h2>Un equipo de profesionales para una empresa profesional</h2>
         </div>
-        <div class="cards__nosotros">
-            <div class="card__nosotros">
-                <div class="card__content">
-                    <img class="card__nosotros__imagen" src="../img/nosotros/person1.jpg" alt="">
-                    <h4 class="card__nosotros__h4">Marcos Lee</h4>
-                    <p class="card__nosotros__cargo">Director Ejecutivo </p>
-                    <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                        velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis dicta
-                        rerum hic minima adipisci. Eius, saepe ad.</p>
-                </div>
-            </div>
-            <div class="card__nosotros">
-                <div class="card__content">
-                    <img class="card__nosotros__imagen" src="../img/nosotros/person2.jpg" alt="">
-                    <h4 class="card__nosotros__h4">Benjamin Roja</h4>
-                    <p class="card__nosotros__cargo">Director de Operaciones</p>
-                    <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                        velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis dicta
-                        rerum hic minima adipisci</p>
-                </div>
+        <div class="nosotros__info">
+            <p>En Connect, somos una empresa líder en soluciones de telecomunicaciones y tecnología de la información.
+                Nuestra visión es ser el puente que conecta a las personas, empresas y comunidades con un mundo digital
+                en constante evolución. Desde nuestra fundación, hemos estado dedicados a proporcionar servicios de
+                primera clase, soluciones innovadoras y un soporte técnico excepcional.</p>
 
+            <div>
+                <h3>Nuestra Pasión y Compromiso</h3>
+                <p>Lo que impulsa a Connect es nuestra pasión por la tecnología y el deseo de hacer una diferencia
+                    positiva en la vida de nuestros clientes. Nos enorgullecemos de ser un equipo diverso y apasionado
+                    de expertos en telecomunicaciones y tecnología de la información. Nuestros profesionales son el alma
+                    de nuestra empresa, y su conocimiento, experiencia y creatividad son el combustible que alimenta
+                    nuestras soluciones innovadoras.</p>
             </div>
-            <div class="card__nosotros">
-                <div class="card__content">
-                    <img class="card__nosotros__imagen" src="../img/nosotros/person3.jpg" alt="">
-                    <h4 class="card__nosotros__h4">Dimitri Boog</h4>
-                    <p class="card__nosotros__cargo">Director Financiero</p>
-                    <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                            velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis dicta
+
+            <h3>Un Equipo de Excelencia</h3>
+
+            <p>Nuestro equipo está compuesto por ingenieros, especialistas en redes, expertos en seguridad cibernética,
+                consultores tecnológicos y profesionales de servicio al cliente. Cada miembro de nuestro equipo trae
+                consigo un conjunto único de habilidades y conocimientos, lo que nos permite ofrecer soluciones
+                informáticas personalizadas y un enfoque de atención al cliente excepcional.</p>
+
+            <h3>El Compromiso con Nuestros Clientes</h3>
+
+            <p>Para nosotros, nuestros clientes son la piedra angular de todo lo que hacemos. Nos enfocamos en
+                comprender sus necesidades, desafíos y objetivos para brindarles soluciones personalizadas y efectivas.
+                Nuestra dedicación al servicio al cliente nos ha permitido construir relaciones sólidas y duraderas con
+                quienes confían en nosotros para potenciar su negocio y mejorar su vida digital.</p>
+
+            <h3>Un Futuro Conectado</h3>
+
+            <p>En Connect, estamos emocionados por el futuro y las infinitas posibilidades que la tecnología nos ofrece.
+                Continuaremos evolucionando y expandiendo nuestros servicios para adaptarnos a las cambiantes demandas
+                del mundo digital. Nuestro objetivo es ser tu socio confiable en este viaje, proporcionando soluciones
+                avanzadas que impulsen tu éxito en un mundo cada vez más conectado.</p>
+        </div>
+        <div>
+            <h3 class="m-5 text-center">Nuestra Familia</h3>
+            <div class="cards__nosotros">
+                <div class="card__nosotros">
+                    <div class="card__content">
+                        <img class="card__nosotros__imagen" src="../img/nosotros/person1.jpg" alt="">
+                        <h4 class="card__nosotros__h4">Marcos Lee</h4>
+                        <p class="card__nosotros__cargo">Director Ejecutivo </p>
+                        <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora
+                            velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis
+                            dicta
                             rerum hic minima adipisci. Eius, saepe ad.</p>
+                    </div>
                 </div>
+                <div class="card__nosotros">
+                    <div class="card__content">
+                        <img class="card__nosotros__imagen" src="../img/nosotros/person2.jpg" alt="">
+                        <h4 class="card__nosotros__h4">Benjamin Roja</h4>
+                        <p class="card__nosotros__cargo">Director de Operaciones</p>
+                        <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora
+                            velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis
+                            dicta
+                            rerum hic minima adipisci. Eius, saepe ad.</p>
+                    </div>
 
-            </div>
-            <div class="card__nosotros">
-                <div class="card__content">
-                    <img class="card__nosotros__imagen" src="../img/nosotros/person4.jpg" alt="">
-                    <h4 class="card__nosotros__h4">Ema Sole</h4>
-                    <p class="card__nosotros__cargo">Directora de Marketing</p>
-                    <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                        velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis dicta
-                        rerum hic minima adipisci. Eius, saepe ad.</p>
                 </div>
+                <div class="card__nosotros">
+                    <div class="card__content">
+                        <img class="card__nosotros__imagen" src="../img/nosotros/person3.jpg" alt="">
+                        <h4 class="card__nosotros__h4">Dimitri Boog</h4>
+                        <p class="card__nosotros__cargo">Director Financiero</p>
+                        <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora
+                            velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis
+                            dicta
+                            rerum hic minima adipisci.</p>
+                    </div>
 
-            </div>
-            <div class="card__nosotros">
-                <div class="card__content">
-                    <img class="card__nosotros__imagen" src="../img/nosotros/person5.jpg" alt="">
-                    <h4 class="card__nosotros__h4">Lisa Moon</h4>
-                    <p class="card__nosotros__cargo">Director de Ventas</p>
-                    <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                        velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis dicta
-                        rerum hic minima adipisci. Eius, saepe ad.</p>
                 </div>
+                <div class="card__nosotros">
+                    <div class="card__content">
+                        <img class="card__nosotros__imagen" src="../img/nosotros/person4.jpg" alt="">
+                        <h4 class="card__nosotros__h4">Ema Sole</h4>
+                        <p class="card__nosotros__cargo">Directora de Marketing</p>
+                        <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora
+                            velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis
+                            dicta
+                            rerum hic minima adipisci. Eius, saepe ad.</p>
+                    </div>
 
-            </div>
-            <div class="card__nosotros">
-                <div class="card__content">
-                    <img class="card__nosotros__imagen" src="../img/nosotros/person6.jpg" alt="">
-                    <h4 class="card__nosotros__h4">Sophia Jhonson</h4>
-                    <p class="card__nosotros__cargo">Recursos Humanos</p>
-                    <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                        velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis dicta
-                        rerum hic minima adipisci. Eius, saepe ad.</p>
+                </div>
+                <div class="card__nosotros">
+                    <div class="card__content">
+                        <img class="card__nosotros__imagen" src="../img/nosotros/person5.jpg" alt="">
+                        <h4 class="card__nosotros__h4">Lisa Moon</h4>
+                        <p class="card__nosotros__cargo">Director de Ventas</p>
+                        <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora
+                            velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis
+                            dicta
+                            rerum hic minima adipisci. Eius, saepe ad.</p>
+                    </div>
+
+                </div>
+                <div class="card__nosotros">
+                    <div class="card__content">
+                        <img class="card__nosotros__imagen" src="../img/nosotros/person6.jpg" alt="">
+                        <h4 class="card__nosotros__h4">Sophia Jhonson</h4>
+                        <p class="card__nosotros__cargo">Recursos Humanos</p>
+                        <p class="card__nosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora
+                            velit aperiam nisi, magni officia sequi! Vitae, autem quas! Illo debitis numquam veritatis
+                            dicta
+                            rerum hic minima adipisci. Eius, saepe ad.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div>
+            <div class="titulo">
+                <h2>¿Te interesa trabajar con nosotros?</h2>
+                <h4>Dejanos un mensaje y te enviaremos más información</h4>
+            </div>
+            <form>
+                <div>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1"
+                            placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-outline-dark">Enviar</button>
+                </div>
+                
+            </form>
+        </div>
+
     </main>
 
+    <!---------------------------------->
+    <!------------- Footer ------------->
+    <!---------------------------------->
 
     <footer>
         <div>
             <img class="footer-logo" src="../img/logo-logo.svg" alt="logo">
-            <p>Logo ©2023 - Todos los derechos reservados</p>
+            <p>Connect ©2023 - Todos los derechos reservados</p>
         </div>
         <div>
             <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>
             <a href="" class="footer-redes"><i class="bi bi-twitter"></i></a>
             <a href="" class="footer-redes"><i class="bi bi-instagram"></i></a>
-        </div>  
-</footer>
+        </div>
+    </footer>
 
 
     <!--Scripts Bootstrap-->

@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+    .section_content {
+        text-align: center !important;
+        gap: 3rem;
+
+        .img-desktop {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .img-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn-color {
+        background-color: #242F73 !important;
+    }
+}

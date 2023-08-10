@@ -1,0 +1,48 @@
+.banner {
+    background: rgb(0, 67, 133);
+    background: linear-gradient(42deg, rgba(0, 67, 133, 1) 51%, rgba(81, 0, 195, 1) 98%);
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 100vh;
+
+    h1 {
+        font-weight: 400;
+    }
+    
+
+    .btn-color {
+        background-color: #18608C !important;
+        color: #fff !important;
+
+        &:hover {
+            background-color: #104261 !important;
+        }
+    }
+
+}
+
+
+.section {
+    h3 {
+        font-weight: 700;
+    }
+    .section_content {
+        margin-block: 12rem;
+
+        .item {
+            padding: 6rem;
+        }
+
+        .img {
+            height: 400px;
+
+        }
+
+        .main-texto {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+}

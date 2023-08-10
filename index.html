@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style/scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Inicio</title>
 </head>
 
@@ -25,6 +26,7 @@
         <!-- Nav tabs -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
+                <a href="#"><img class="navbar-logo-solo" src="./img/connect-logo-solo.svg" alt=""></a>
                 <a href="#"><img class="navbar-logo" src="./img/logo-logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +47,7 @@
                             <a class="nav-link" href="./templates/ayuda.html">Ayuda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link m-0" href="./templates/login.html">Iniciar Sesión <i
+                            <a class="nav-link m-0 nav-link-login" href="./templates/login.html">Iniciar Sesión <i
                                     class="bi bi-person"></i></a>
                         </li>
                     </ul>
@@ -53,15 +55,20 @@
             </div>
         </nav>
     </header>
+
+    <!---------------------------------->
+    <!------------- Navbar ------------->
+    <!---------------------------------->
+
     <main class="inicio">
         <div class="banner">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row animate__animated animate__fadeIn">
+                    <div class="col-md-6 mb-2 ">
                         <h1>Ofrecemos la mejor experiencia de <strong>conexión</strong> del país</h1>
                     </div>
                     <div class="col-md-6">
-                        <h4 class="mb-4">¿En qué podemos ayudarte?</h4>
+                        <h4 class="mb-3">¿En qué podemos ayudarte?</h4>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Escribí tu consulta"
                                 aria-label="Search">
@@ -71,9 +78,9 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="seccion row">
-                <div class="item col-md-6">
+        <div class="container section">
+            <div class="section_content row">
+                <div class="col-md-6">
                     <img class="img img-fluid" src="./img/inicio/undraw_online_re_x00h.svg" alt="">
                 </div>
                 <div class="main-texto col-md-6">
@@ -87,10 +94,14 @@
                     </div>
                 </div>
             </div>
-            <div class="seccion row align-items-center">
+            <div class="section_content row">
+                <div class="img-mobile col-md-6">
+                    <img class="img img-fluid" class="section_content item" src="./img/inicio/undraw_gaming_re_cma2.svg"
+                        alt="">
+                </div>
                 <div class="main-texto col-md-6">
                     <div>
-                        <h3>Baja latencia ideal para juegos y tareas que necesiten rápidas respuestas</h3>
+                        <h3 class="animate__animated animate__fadeIn">Baja latencia ideal para juegos y tareas que necesiten rápidas respuestas</h3>
                         <p>En Connect, entendemos la importancia de una baja latencia cuando se trata de juegos.Sabemos
                             que cada milisegundo cuenta y puede marcar la diferencia entre la victoria y la derrota, el
                             éxito y la frustración.
@@ -102,13 +113,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img class="img img-fluid" class="seccion item" src="./img/inicio/undraw_video_game_night_8h8m.svg"
-                        alt="">
+                    <img class="img img-desktop img-fluid" class="section_content item"
+                        src="./img/inicio/undraw_gaming_re_cma2.svg" alt="">
                 </div>
             </div>
-            <div class="seccion row">
-                <div class="item col-md-6">
-                    <img class="img img-fluid" class="seccion" src="./img/inicio/undraw_cloud_hosting_7xb1.svg" alt="">
+            <div class="section_content row">
+                <div class="col-md-6">
+                    <img class="img img-fluid" class="section_content" src="./img/inicio/undraw_server_cluster_jwwq.svg"
+                        alt="">
                 </div>
                 <div class="main-texto col-md-6">
                     <div>
@@ -126,8 +138,8 @@
     </main>
     <footer>
         <div>
-            <img class="footer-logo" src="./img/logo-logo.svg" alt="logo">
-            <p>Logo ©2023 - Todos los derechos reservados</p>
+            <p>Connect ©2023</p>
+            <p>Todos los derechos reservados</p>
         </div>
         <div>
             <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>

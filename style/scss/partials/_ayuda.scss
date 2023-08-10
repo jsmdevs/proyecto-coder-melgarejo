@@ -1,0 +1,29 @@
+@import "./variables";
+
+.ayuda__contacto {
+    gap: 3rem;
+
+    .contacto__medios {
+        border: solid;
+        border-radius: 10px;
+        border-color: $colorPrincipal !important;
+        border-width: 0.2rem;
+        padding: 2rem;
+        box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.288);
+        }
+}
+
+form {
+    font-weight:500;
+    button {
+        color:#fff;
+        font-weight: 700;
+        border-color: #d4d4d4;
+        border-radius: 5px;
+        text-align: center;
+        border-width: 1px;
+        margin: 5px;
+        padding: 10px;
+        background-color: $colorPrincipal;
+    }
+}

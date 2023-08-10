@@ -4,23 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style/scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/bootstrap/bootstrap.min.css">
     <title>Inicio</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-shadow navbar-dark">
+        <!-- Nav tabs -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a href="#"><img class="navbar-logo" src="../img/logo-logo.svg" alt=""></a>
+                <a href="../index.html"><img class="navbar-logo-solo" src="../img/connect-logo-solo.svg" alt=""></a>
+                <a href="../index.html"><img class="navbar-logo" src="../img/logo-logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
-                            <a class="nav-link active"href="../index.html">Inicio</a>
+                            <a class="nav-link active" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../templates/servicios.html">Servicios</a>
@@ -40,59 +45,135 @@
                             <a class="nav-link" href="../templates/ayuda.html">Ayuda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../templates/login.html">Iniciar Sesión <i class="bi bi-person"></i></a>
+                            <a class="nav-link m-0 nav-link-login" href="../templates/login.html">Iniciar Sesión <i
+                                    class="bi bi-person"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!---------------------------------->
+    <!------------- Navbar ------------->
+    <!---------------------------------->
+
     <main class="container">
         <div class="titulo">
             <h1>Internet para tu hogar</h1>
             <h3>Contratá el plan que mejor se adapte a tus necesidades</h3>
         </div>
-        <div class="cards__servicios row justify-content-center">
-            <div class="card__servicios col-xs-12 col-md-5 col-lg-3 ">
+        <div class=" container cards__servicios row justify-content-center">
+
+            <!---------------------------------->
+            <!------------- Card 1 ------------->
+            <!---------------------------------->
+
+            <div class="card__servicios col-md-5 col-lg-5">
                 <h3 class="card__servicios__titulo"><strong>Básico</strong></h3>
-                <p>50Mb simétrico   <i class="bi bi-arrow-down-up"></i></p>
-                <p>Soporte técnico virtual <i class="bi bi-headset"></i></p>
-                <button class="card__servicios__boton">Contratar</button>
+                <div class="container card__items">
+                    <div class="item1">
+                        <p><i class="bi bi-arrow-down-up"></i> <strong>100Mb</strong> simétrico</p>
+                    </div>
+                    <div class="item2">
+                        <p><img height="25px" src="../img/servicios/santander-logo-solo.svg" alt=""> <strong>30% OFF</strong> pagando con
+                            Santander</i></p>
+                    </div>
+                    <div class="item5">
+                        <p><i class="bi bi-router"></i> Modem Wi-Fi 6</i></p>
+                    </div>
+                    <div class="item3">
+                        <p><i class="bi bi-spotify spo"></i> 3 meses de Spotify</i></p>
+                    </div>
+                </div>
+                <div class="card__servicios__precio">
+                    <p><strong>$3890</strong>/mes</p>
+                </div>
+                <div class="card__servicios__button">
+                    <button>Contratar</button>
+                </div>
             </div>
-            <div class="card__servicios col-xs-6 col-md-5 col-lg-3">
+
+            <!---------------------------------->
+            <!------------- Card 2 ------------->
+            <!---------------------------------->
+
+            <div class="card__servicios col-md-5 col-lg-5">
                 <h3 class="card__servicios__titulo"><strong>Premium</strong></h3>
-                <p>300Mb simétrico <i class="bi bi-arrow-down-up"></i></p>
-                <p>Modem de alto rendimiento <i class="bi bi-modem"></i></p>
-                <p>Red mesh <i class="bi bi-router"></i></p>
-                <p>Soporte técnico virtual <i class="bi bi-headset"></i></p>
-                <button class="card__servicios__boton">Contratar</button>
+                <div class="container card__items">
+                    <div class="item1">
+                        <p><i class="bi bi-arrow-down-up"></i> <strong>500Mb</strong> simétrico</p>
+                    </div>
+                    <div class="item2">
+                        <p><img height="25px" src="../img/servicios/santander-logo-solo.svg" alt=""> <strong>30% OFF</strong> pagando con
+                            Santander</i></p>
+                    </div>
+                    <div class="item5">
+                        <p><i class="bi bi-router"></i> Modem Wi-Fi 6</i></p>
+                    </div>
+                    <div class="item3">
+                        <p><i class="bi bi-spotify spo"></i> 3 meses de Spotify</i></p>
+                    </div>
+                </div>
+                <div class="card__servicios__precio">
+                    <p><strong>$5790</strong>/mes</p>
+                </div>
+                <div class="card__servicios__button">
+                    <button>Contratar</button>
+                </div>
             </div>
-            <div class="card__servicios col-xs-6 col-md-6 col-lg-3">
+
+            <!---------------------------------->
+            <!------------- Card 3 ------------->
+            <!---------------------------------->
+
+            <div class="card__servicios col-md-5 col-lg-5">
                 <h3 class="card__servicios__titulo"><strong>Profesional</strong></h3>
-                <p>700Mb simétrico <i class="bi bi-arrow-down-up"></i></p>
-                <p>Modem de alto rendimiento <i class="bi bi-modem"></i></p>
-                <p>Instalación dedicada <i class="bi bi-tools"></i></p>
-                <p>Soporte técnico virtual <i class="bi bi-headset"></i></p>
-                <p>Soporte técnico prioritario <i class="bi bi-lightning-fill"></i></p>
-                <button class="card__servicios__boton">Contratar</button>
+                <div class="container card__items">
+                    <div class="item1">
+                        <p><i class="bi bi-arrow-down-up"></i> <strong>700Mb</strong> simétrico</p>
+                    </div>
+                    <div class="item2">
+                        <p><img height="25px" src="../img/servicios/santander-logo-solo.svg" alt=""> <strong>30% OFF</strong> pagando con
+                            Santander</i></p>
+                    </div>
+                    <div class="item5">
+                        <p><i class="bi bi-router"></i> Modem Wi-Fi 6</i></p>
+                    </div>
+                    <div class="item3">
+                        <p><i class="bi bi-spotify spo"></i> 3 meses de Spotify</i></p>
+                    </div>
+                </div>
+                <div class="card__servicios__precio">
+                    <p><strong>$7950</strong>/mes</p>
+                </div>
+                <div class="card__servicios__button">
+                    <button>Contratar</button>
+                </div>
             </div>
-            
+
         </div>
-        </main>
-        <footer>
-            <div>
-                <img class="footer-logo" src="../img/logo-logo.svg" alt="logo">
-                <p>Connect ©2023 - Todos los derechos reservados</p>
-            </div>
-            <div>
-                <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>
-                <a href="" class="footer-redes"><i class="bi bi-twitter"></i></a>
-                <a href="" class="footer-redes"><i class="bi bi-instagram"></i></a>
-            </div>  
+    </main>
+
+    <!---------------------------------->
+    <!------------- Footer ------------->
+    <!---------------------------------->
+
+
+    <footer>
+        <div>
+            <img class="footer-logo" src="../img/logo-logo.svg" alt="logo">
+            <p>Connect ©2023 - Todos los derechos reservados</p>
+        </div>
+        <div>
+            <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>
+            <a href="" class="footer-redes"><i class="bi bi-twitter"></i></a>
+            <a href="" class="footer-redes"><i class="bi bi-instagram"></i></a>
+        </div>
     </footer>
 
-        <!--Scripts Bootstrap-->
-         <script src="../js/bootstrap.bundle.min.js"></script>
+    <!--Scripts Bootstrap-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
 

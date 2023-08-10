@@ -1,0 +1,392 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+body main {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 78.4px;
+}
+body .titulo {
+  text-align: center;
+  margin-block: 8rem 2rem;
+}
+body p {
+  font-weight: 600 !important;
+  color: #535461 !important;
+}
+
+nav {
+  background-color: #da291c !important;
+  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  position: fixed !important;
+  width: 100% !important;
+  top: 0 !important;
+  z-index: 100;
+}
+nav a {
+  color: #fff !important;
+}
+nav a:hover {
+  color: #dddddd !important;
+}
+nav .navbar-shadow {
+  box-shadow: 4px 4px 14px -6px rgba(252, 3, 16, 0.692);
+}
+nav i {
+  color: white;
+}
+nav .navbar-logo {
+  height: 3.5rem;
+  margin: 0.2rem;
+}
+nav .navbar-logo-solo {
+  height: 3.5rem;
+  margin: 0.2rem;
+}
+nav #navbarNav {
+  justify-content: end;
+}
+nav #navbarNav .menu {
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer {
+  background-color: #333333;
+  padding: 2rem;
+  margin-top: 80px;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+}
+footer p {
+  margin: 0px !important;
+}
+footer p {
+  color: white !important;
+}
+footer .footer-redes {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.banner {
+  background: rgb(0, 67, 133);
+  background: linear-gradient(42deg, rgb(0, 67, 133) 51%, rgb(81, 0, 195) 98%);
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+}
+.banner h1 {
+  font-weight: 400;
+}
+.banner .btn-color {
+  background-color: #18608C !important;
+  color: #fff !important;
+}
+.banner .btn-color:hover {
+  background-color: #104261 !important;
+}
+
+.section h3 {
+  font-weight: 700;
+}
+.section .section_content {
+  margin-block: 12rem;
+}
+.section .section_content .item {
+  padding: 6rem;
+}
+.section .section_content .img {
+  height: 400px;
+}
+.section .section_content .main-texto {
+  display: flex;
+  align-items: center;
+}
+
+.ayuda__contacto {
+  gap: 3rem;
+}
+.ayuda__contacto .contacto__medios {
+  border: solid;
+  border-radius: 10px;
+  border-color: #da291c !important;
+  border-width: 0.2rem;
+  padding: 2rem;
+  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.288);
+}
+
+form {
+  font-weight: 500;
+}
+form button {
+  color: #fff;
+  font-weight: 700;
+  border-color: #d4d4d4;
+  border-radius: 5px;
+  text-align: center;
+  border-width: 1px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #da291c;
+}
+
+.cards__servicios {
+  gap: 1rem;
+}
+.cards__servicios .card__servicios {
+  border-radius: 7px;
+  font-size: 0.8rem;
+  padding: 0px !important;
+  border: solid;
+  border-width: 0.2rem;
+  border-color: #da291c;
+  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.75);
+}
+.cards__servicios .card__servicios .card__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cards__servicios .card__servicios .spotify {
+  color: #1ED760 !important;
+}
+.cards__servicios .card__servicios i {
+  font-size: 1.2rem;
+  color: #da291c;
+}
+.cards__servicios .card__servicios p {
+  border-bottom: #da291c;
+}
+.cards__servicios .card__servicios .card__servicios__titulo {
+  color: #fff;
+  padding: 1rem;
+  background-color: #da291c;
+}
+.cards__servicios .card__servicios .card__servicios__precio {
+  display: flex;
+  justify-content: center;
+}
+.cards__servicios .card__servicios .card__servicios__precio p {
+  font-size: 2.5rem;
+  font-weight: 400 !important;
+}
+.cards__servicios .card__servicios .card__servicios__button {
+  display: flex;
+  justify-content: center;
+}
+.cards__servicios .card__servicios .card__servicios__button button {
+  color: white;
+  font-weight: 600;
+  background-color: #da291c;
+  border: none;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+}
+.cards__servicios .card__servicios .card__servicios__titulo,
+.cards__servicios .card__servicios .card__servicios__parrafo {
+  margin-bottom: 15px;
+}
+
+.login {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__login {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #da291c;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.75);
+  gap: 2rem;
+}
+.card__login form {
+  background-color: #fff;
+  color: #333333;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.card__login .forgot_password_user {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.card__login .forgot_password_user a {
+  color: #333333 !important;
+  margin-inline: 0.2rem;
+}
+.card__login .btn-login {
+  width: 150px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #da291c;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.nosotros__info h3 {
+  margin-top: 2rem;
+}
+
+.cards__nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+}
+.cards__nosotros .card__nosotros {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.cards__nosotros .card__nosotros .card__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "image title title" "image cargo cargo" "paragraph paragraph paragraph";
+  grid-gap: 10px;
+  padding: 10px;
+}
+.cards__nosotros .card__nosotros .card__content .card__nosotros__imagen {
+  grid-area: image;
+  width: 100px;
+  border-radius: 50%;
+}
+.cards__nosotros .card__nosotros .card__content .card__nosotros__h4 {
+  grid-area: title;
+}
+.cards__nosotros .card__nosotros .card__content .card__nosotros__parrafo {
+  grid-area: paragraph;
+}
+.cards__nosotros .card__nosotros .card__content .card__nosotros__cargo {
+  grid-area: cargo;
+}
+
+@media screen and (max-width: 768px) {
+  .section_content {
+    text-align: center !important;
+    gap: 3rem;
+  }
+  .section_content .img-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-mobile {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .btn-color {
+    background-color: #242F73 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .login_titulo_min_990 {
+    display: none;
+  }
+  .forgot_password_user {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__login {
+    margin-inline: 0.01rem !important;
+  }
+  .card__login .forgot_password_user {
+    font-size: 15px;
+  }
+  .card__login .forgot_password_user button {
+    width: 7rem !important;
+    font-size: 13px;
+    margin-block: 0.2rem !important;
+  }
+  .card__login .login_titulo_max_990 {
+    display: none;
+  }
+  .card__login .login_titulo_min_990 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cards__nosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cards__nosotros {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__nosotros {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer p {
+    text-align: start;
+  }
+}
+@media screen and (max-width: 991px) {
+  .card__servicios {
+    margin-top: 20px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .card__servicios {
+    text-align: center;
+  }
+  .card__servicios .card__items {
+    grid-template-columns: 1fr !important;
+  }
+  .card__servicios .card__servicios__precio p {
+    font-size: 2rem !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar-login {
+    display: none;
+  }
+  .navbar-logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 991px) {
+  .navbar-logo-solo {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contacto__medios {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

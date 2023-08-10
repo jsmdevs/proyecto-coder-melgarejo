@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+    .login_titulo_min_990 {
+        display: none;
+    }
+
+    .forgot_password_user {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .card__login {
+        margin-inline: 0.01rem !important;
+
+        .forgot_password_user {
+            font-size: 15px;
+
+
+        button {
+            width: 7rem !important;
+            font-size: 13px;
+            margin-block: 0.2rem !important;
+        }
+
+    }
+
+    .login_titulo_max_990 {
+        display: none;
+    }
+
+    .login_titulo_min_990 {
+        text-align: center;
+    }
+} 
+}
