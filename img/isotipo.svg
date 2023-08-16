@@ -1,0 +1,22 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" class="iconLeft">
+ <!---->
+ <defs>
+  <!---->
+  <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="489e2e24-6c38-4a03-8f4a-044c5f2fa102" gradientTransform="rotate(25)">
+   <stop stop-color="#000A68" offset="0%"/>
+   <stop stop-color="#00C4EE" offset="100%"/>
+  </linearGradient>
+ </defs>
+ <defs>
+  <!---->
+ </defs>
+
+ <!---->
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" class="logo-background-square" height="300" width="300" y="-50.83318" x="38.33322" fill="transparent"/>
+  <g transform="matrix(9.37212 0 0 9.37212 93.2077 320.804)" fill="url(#489e2e24-6c38-4a03-8f4a-044c5f2fa102)" id="c871ab5a-564d-48ff-951e-9d8f68746c26">
+   <path id="svg_3" d="m6.06021,-2.22618c8.837,0 16,-7.163 16,-16s-7.163,-16 -16,-16s-16,7.163 -16,16s7.163,16 16,16zm-1.183,-25.579l2,0l0,8.886l8.887,0l0,2l-10.887,0l0,-10.886zm-5.959,0.437l2,0l0,14.283l14.283,0l0,2l-16.283,0l0,-16.283z"/>
+  </g>
+ </g>
+</svg>

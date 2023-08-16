@@ -7,47 +7,82 @@
 body {
   background-color: #fff;
 }
+body h1, body h2, body h3 {
+  font-weight: 600;
+}
+body .activo {
+  color: #009CDE !important;
+}
 body main {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
-  margin-top: 78.4px;
+  margin-top: 63.4px;
 }
 body .titulo {
   text-align: center;
-  margin-block: 8rem 2rem;
+  margin-block: 10rem 4rem;
+}
+body .titulo h3 {
+  color: #535461 !important;
 }
 body p {
   font-weight: 600 !important;
   color: #535461 !important;
 }
+body form .form__button {
+  display: flex;
+  justify-content: end;
+}
+body .boton {
+  width: 150px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #009CDE;
+  padding: 10px;
+  border-radius: 7px;
+}
+body .boton:hover {
+  background-color: #fff;
+  color: #009CDE;
+  border: solid;
+  border-width: 0.1rem;
+  border-color: #009CDE;
+}
 
 nav {
-  background-color: #da291c !important;
-  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.5);
+  background-color: #FFF !important;
   font-weight: 600;
+  border-bottom: solid;
+  border-width: 0.1rem;
+  border-color: #d6d6d6;
   font-family: "Roboto", sans-serif;
   position: fixed !important;
   width: 100% !important;
   top: 0 !important;
   z-index: 100;
+  padding-inline: 20px;
 }
-nav a {
-  color: #fff !important;
+nav a, nav i {
+  color: #535461 !important;
 }
 nav a:hover {
-  color: #dddddd !important;
+  color: #009CDE !important;
 }
-nav .navbar-shadow {
-  box-shadow: 4px 4px 14px -6px rgba(252, 3, 16, 0.692);
+nav i:hover {
+  color: #009CDE !important;
 }
 nav i {
   color: white;
+  transition: 1s;
 }
-nav .navbar-logo {
-  height: 3.5rem;
+nav .navbar-nav {
+  color: #009CDE !important;
+}
+nav .navbar-logotipo {
+  height: 2.5rem;
   margin: 0.2rem;
 }
-nav .navbar-logo-solo {
+nav .navbar-isotipo {
   height: 3.5rem;
   margin: 0.2rem;
 }
@@ -60,34 +95,43 @@ nav #navbarNav .menu {
 }
 
 footer {
-  background-color: #333333;
+  display: flex;
   padding: 2rem;
   margin-top: 80px;
-  color: white;
+  color: hsl(211, 10%, 61%) !important;
   font-size: 10px;
+  font-weight: 600px !important;
   text-align: center;
 }
 footer a {
-  color: #fff;
+  color: hsl(211, 10%, 61%);
+  transition: 0.5s;
+}
+footer a:hover {
+  color: #535461;
 }
 footer p {
   margin: 0px !important;
 }
-footer p {
-  color: white !important;
-}
 footer .footer-redes {
-  font-size: 30px;
+  font-size: 2rem;
   margin-left: 10px;
+}
+footer .redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .copy img {
+  width: 9rem;
 }
 
 .banner {
-  background: rgb(0, 67, 133);
-  background: linear-gradient(42deg, rgb(0, 67, 133) 51%, rgb(81, 0, 195) 98%);
+  height: 100vh;
+  background: linear-gradient(337deg, rgb(55, 205, 224) 20%, rgb(0, 97, 177) 100%);
   display: flex;
   align-items: center;
   color: #fff;
-  height: 100vh;
 }
 .banner h1 {
   font-weight: 400;
@@ -100,8 +144,8 @@ footer .footer-redes {
   background-color: #104261 !important;
 }
 
-.section h3 {
-  font-weight: 700;
+.section {
+  overflow: hidden;
 }
 .section .section_content {
   margin-block: 12rem;
@@ -123,7 +167,7 @@ footer .footer-redes {
 .ayuda__contacto .contacto__medios {
   border: solid;
   border-radius: 10px;
-  border-color: #da291c !important;
+  border-color: #009CDE !important;
   border-width: 0.2rem;
   padding: 2rem;
   box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.288);
@@ -131,17 +175,6 @@ footer .footer-redes {
 
 form {
   font-weight: 500;
-}
-form button {
-  color: #fff;
-  font-weight: 700;
-  border-color: #d4d4d4;
-  border-radius: 5px;
-  text-align: center;
-  border-width: 1px;
-  margin: 5px;
-  padding: 10px;
-  background-color: #da291c;
 }
 
 .cards__servicios {
@@ -153,9 +186,8 @@ form button {
   font-size: 0.8rem;
   padding: 0px !important;
   border: solid;
-  border-width: 0.2rem;
-  border-color: #da291c;
-  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.75);
+  border-width: 0.1rem;
+  border-color: #a0a0a0;
 }
 .cards__servicios .card__servicios .card__items {
   display: grid;
@@ -167,15 +199,17 @@ form button {
 }
 .cards__servicios .card__servicios i {
   font-size: 1.2rem;
-  color: #da291c;
+  color: #009CDE;
 }
 .cards__servicios .card__servicios p {
-  border-bottom: #da291c;
+  color: #535461 !important;
 }
 .cards__servicios .card__servicios .card__servicios__titulo {
   color: #fff;
   padding: 1rem;
-  background-color: #da291c;
+  background-color: #009CDE;
+  border-top-left-radius: 7px !important;
+  border-top-right-radius: 7px !important;
 }
 .cards__servicios .card__servicios .card__servicios__precio {
   display: flex;
@@ -183,24 +217,16 @@ form button {
 }
 .cards__servicios .card__servicios .card__servicios__precio p {
   font-size: 2.5rem;
+  margin: 0px;
   font-weight: 400 !important;
-}
-.cards__servicios .card__servicios .card__servicios__button {
-  display: flex;
-  justify-content: center;
-}
-.cards__servicios .card__servicios .card__servicios__button button {
-  color: white;
-  font-weight: 600;
-  background-color: #da291c;
-  border: none;
-  padding: 10px;
-  margin-bottom: 1rem;
-  border-radius: 7px;
+  color: #535461 !important;
 }
 .cards__servicios .card__servicios .card__servicios__titulo,
 .cards__servicios .card__servicios .card__servicios__parrafo {
   margin-bottom: 15px;
+}
+.cards__servicios .card__servicios button {
+  margin: 2rem;
 }
 
 .login {
@@ -214,17 +240,23 @@ form button {
   display: flex;
   align-items: center;
   color: #fff;
-  background-color: #da291c;
+  background: rgb(0, 205, 233);
+  background: linear-gradient(140deg, rgb(0, 205, 233) 38%, rgb(0, 95, 173) 100%);
   border-radius: 10px;
   padding: 3rem;
-  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.301);
   gap: 2rem;
 }
 .card__login form {
   background-color: #fff;
+  box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.301);
   color: #333333;
   border-radius: 10px;
   padding: 2rem;
+}
+.card__login form .login__button,
+.card__login form .register__button {
+  margin: 0.3rem !important;
 }
 .card__login .forgot_password_user {
   text-align: center;
@@ -233,14 +265,6 @@ form button {
 .card__login .forgot_password_user a {
   color: #333333 !important;
   margin-inline: 0.2rem;
-}
-.card__login .btn-login {
-  width: 150px;
-  color: #fff;
-  font-weight: 600;
-  background-color: #da291c;
-  padding: 10px;
-  border-radius: 7px;
 }
 
 .nosotros__info h3 {
@@ -348,16 +372,27 @@ form button {
 }
 @media screen and (min-width: 768px) {
   footer {
-    display: flex;
     justify-content: space-between;
   }
   footer p {
-    text-align: right;
+    text-align: left;
   }
 }
 @media screen and (max-width: 768px) {
+  footer {
+    display: flex !important;
+    flex-direction: column;
+  }
   .redes {
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    order: 1 !important;
+  }
+  .redes .footer-redes {
+    margin-inline: 15px;
+    font-size: 2.5rem !important;
+  }
+  .copy {
+    order: 2 !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -377,16 +412,23 @@ form button {
   }
 }
 @media screen and (max-width: 991px) {
-  .navbar-login {
+  .navbar-logotipo {
     display: none;
   }
-  .navbar-logo {
-    display: none;
+  .navbar {
+    padding-inline: 0px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .nosotros__info .nosotros__info__mision,
+  .nosotros__info .nosotros__info__vision {
+    margin-block: 1rem;
   }
 }
 @media screen and (min-width: 991px) {
-  .navbar-logo-solo {
-    display: none;
+  .navbar-logo {
+    padding-left: 0.2rem;
   }
 }
 @media screen and (max-width: 991px) {

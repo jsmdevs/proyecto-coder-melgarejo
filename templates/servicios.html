@@ -16,16 +16,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../style/bootstrap/bootstrap.min.css">
-    <title>Inicio</title>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/d4412fafd7.js" crossorigin="anonymous"></script>
+
+    <title>Internet para tu hogar | Connect</title>
+    <meta name="description" content="Elegí el plan que mejor se adapte a tus necesidades">
+    <meta name="keywords" content="INTERNET, INTERNET SIMETRICO, 300MB, 500MB, 700MB">
 </head>
 
 <body>
     <header>
         <!-- Nav tabs -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a href="../index.html"><img class="navbar-logo-solo" src="../img/connect-logo-solo.svg" alt=""></a>
-                <a href="../index.html"><img class="navbar-logo" src="../img/logo-logo.svg" alt=""></a>
+                <div class="navbar_imagotipo">
+                    <a href="../index.html"><img class="navbar-isotipo" src="../img/isotipo.svg" alt="isotipo"></a>
+                    <a href="../index.html"><img class="navbar-logotipo" src="../img/logotipo.svg" alt="logotipo"></a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,10 +42,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../templates/servicios.html">Servicios</a>
+                            <a class="nav-link activo" href="../templates/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../templates/nosotros.html">Nosotros</a>
@@ -59,7 +68,7 @@
     <!---------------------------------->
 
     <main class="container">
-        <div class="titulo">
+        <div class="titulo wow animate__animated animate__fadeInDown">
             <h1>Internet para tu hogar</h1>
             <h3>Contratá el plan que mejor se adapte a tus necesidades</h3>
         </div>
@@ -69,7 +78,7 @@
             <!------------- Card 1 ------------->
             <!---------------------------------->
 
-            <div class="card__servicios col-md-5 col-lg-5">
+            <div class="card__servicios col-md-5 col-lg-5 wow animate__animated animate__fadeIn">
                 <h3 class="card__servicios__titulo"><strong>Básico</strong></h3>
                 <div class="container card__items">
                     <div class="item1">
@@ -89,8 +98,8 @@
                 <div class="card__servicios__precio">
                     <p><strong>$3890</strong>/mes</p>
                 </div>
-                <div class="card__servicios__button">
-                    <button>Contratar</button>
+                <div class="text-center">
+                    <button class="btn boton">Contratar</button>
                 </div>
             </div>
 
@@ -98,7 +107,7 @@
             <!------------- Card 2 ------------->
             <!---------------------------------->
 
-            <div class="card__servicios col-md-5 col-lg-5">
+            <div class="card__servicios col-md-5 col-lg-5 wow animate__animated animate__fadeIn" data-wow-delay=".1s">
                 <h3 class="card__servicios__titulo"><strong>Premium</strong></h3>
                 <div class="container card__items">
                     <div class="item1">
@@ -118,8 +127,8 @@
                 <div class="card__servicios__precio">
                     <p><strong>$5790</strong>/mes</p>
                 </div>
-                <div class="card__servicios__button">
-                    <button>Contratar</button>
+                <div class="text-center">
+                    <button class="btn boton">Contratar</button>
                 </div>
             </div>
 
@@ -127,7 +136,7 @@
             <!------------- Card 3 ------------->
             <!---------------------------------->
 
-            <div class="card__servicios col-md-5 col-lg-5">
+            <div class="card__servicios col-md-5 col-lg-5 wow animate__animated animate__fadeIn" data-wow-delay=".2s">
                 <h3 class="card__servicios__titulo"><strong>Profesional</strong></h3>
                 <div class="container card__items">
                     <div class="item1">
@@ -147,8 +156,8 @@
                 <div class="card__servicios__precio">
                     <p><strong>$7950</strong>/mes</p>
                 </div>
-                <div class="card__servicios__button">
-                    <button>Contratar</button>
+                <div class="text-center">
+                    <button class="btn boton">Contratar</button>
                 </div>
             </div>
 
@@ -161,20 +170,26 @@
 
 
     <footer>
-        <div class="redes">
-            <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-twitter"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-instagram"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-linkedin"></i></a>
-        </div>
         <div class="copy">
+            <img class="mb-1" src="../img/default-monochrome-footer.svg" alt="logotipo gris">
             <p>Connect ©2023</p>
             <p>Todos los derechos reservados</p>
+        </div>
+        <div class="redes">
+            <a href="" class="footer-redes"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
 
     <!--Scripts Bootstrap-->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- WOW Scripts -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 

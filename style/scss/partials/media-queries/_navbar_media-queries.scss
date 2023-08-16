@@ -1,15 +1,26 @@
 @media screen and (max-width: 991px) {
-    .navbar-login {
+    .navbar-logotipo {
         display: none;
     }
 
-    .navbar-logo{
-        display: none;
+    .navbar {
+        padding-inline: 0px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nosotros__info {
+        .nosotros__info__mision,
+        .nosotros__info__vision {
+            margin-block: 1rem;
+        }
     }
 }
 
 @media screen and (min-width: 991px) {
-    .navbar-logo-solo{
-        display: none;
+    .navbar-logo {
+        padding-left: .2rem;
     }
 }

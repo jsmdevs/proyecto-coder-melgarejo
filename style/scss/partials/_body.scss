@@ -1,21 +1,57 @@
+@import "./variables";
+
 body {
     background-color: #fff;
+
+    h1,h2,h3 {
+        font-weight: 600;
+    }
+
+    .activo {
+        color: $colorPrincipal !important;
+    }
 
     main {
         background-color: #fff;
         font-family: 'Montserrat', sans-serif;
-        margin-top: 78.4px;
+        margin-top: 63.4px;
     }
     
     .titulo {
         text-align: center;
-        margin-block: 8rem 2rem;
+        margin-block: 10rem 4rem;
+
+        h3 {
+            color: $colorGris !important;
+        }
     }
 
     p {
         font-weight: 600 !important;
-        color: #535461 !important;
+        color: $colorGris !important;
     }
 
+    form {
+        .form__button {
+            display: flex;
+            justify-content: end;  
+        }
+    }
+
+    .boton {
+        width: 150px;
+        color: #fff;
+        font-weight: 600;
+        background-color: $colorPrincipal;
+        padding: 10px;
+        border-radius: 7px;
+        &:hover {
+            background-color: #fff;
+            color: $colorPrincipal;
+            border: solid;
+            border-width: .1rem;
+            border-color: $colorPrincipal;
+        }
+    }
     
 }

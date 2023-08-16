@@ -16,16 +16,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../style/bootstrap/bootstrap.min.css">
-    <title>Inicio</title>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/d4412fafd7.js" crossorigin="anonymous"></script>
+
+    <title>Sobre nosotros | Connect</title>
+    <meta name="description"
+        content="Conocé nuestro equipo de trabajo y conseguí una posibilidad de trabajar junto a ellos.">
+    <meta name="keywords" content="LOGIN, REGISTER, ACCOUNT, CUENTA">
 </head>
 
 <body>
     <header>
         <!-- Nav tabs -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a href="../index.html"><img class="navbar-logo-solo" src="../img/connect-logo-solo.svg" alt=""></a>
-                <a href="../index.html"><img class="navbar-logo" src="../img/logo-logo.svg" alt=""></a>
+                <div class="navbar_imagotipo">
+                    <a href="../index.html"><img class="navbar-isotipo" src="../img/isotipo.svg" alt="isotipo"></a>
+                    <a href="../index.html"><img class="navbar-logotipo" src="../img/logotipo.svg" alt="logotipo"></a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,13 +43,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../templates/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../templates/nosotros.html">Nosotros</a>
+                            <a class="nav-link activo" href="../templates/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../templates/ayuda.html">Ayuda</a>
@@ -59,75 +69,139 @@
     <!---------------------------------->
 
     <main class="container">
-        <div class="titulo">
+        <div class="titulo wow animate__animated animate__fadeInDown">
             <h2>Un equipo de profesionales para una empresa profesional</h2>
         </div>
         <div class="nosotros__info">
-            <p>En Connect, somos una empresa líder en soluciones de telecomunicaciones y tecnología de la información.
-                Nuestra visión es ser el puente que conecta a las personas, empresas y comunidades con un mundo digital
-                en constante evolución. Desde nuestra fundación, hemos estado dedicados a proporcionar servicios de
-                primera clase, soluciones innovadoras y un soporte técnico excepcional.</p>
-
-            <div>
-                <h3>Nuestra Pasión y Compromiso</h3>
-                <p>Lo que impulsa a Connect es nuestra pasión por la tecnología y el deseo de hacer una diferencia
-                    positiva en la vida de nuestros clientes. Nos enorgullecemos de ser un equipo diverso y apasionado
-                    de expertos en telecomunicaciones y tecnología de la información. Nuestros profesionales son el alma
-                    de nuestra empresa, y su conocimiento, experiencia y creatividad son el combustible que alimenta
-                    nuestras soluciones innovadoras.</p>
+            <div class="wow animate__animated animate__fadeIn">
+                <p>En Connect, somos una empresa líder en soluciones de telecomunicaciones y tecnología de la
+                    información.Nuestra visión es ser el puente que conecta a las personas, empresas y comunidades con un
+                    mundo digital en constante evolución. Desde nuestra fundación, hemos estado dedicados a proporcionar
+                    servicios deprimera clase, soluciones innovadoras y un soporte técnico excepcional.</p>
             </div>
 
-            <h3>Un Equipo de Excelencia</h3>
-
-            <p>Nuestro equipo está compuesto por ingenieros, especialistas en redes, expertos en seguridad cibernética,
-                consultores tecnológicos y profesionales de servicio al cliente. Cada miembro de nuestro equipo trae
-                consigo un conjunto único de habilidades y conocimientos, lo que nos permite ofrecer soluciones
-                informáticas personalizadas y un enfoque de atención al cliente excepcional.</p>
-
-            <h3>El Compromiso con Nuestros Clientes</h3>
-
-            <p>Para nosotros, nuestros clientes son la piedra angular de todo lo que hacemos. Nos enfocamos en
-                comprender sus necesidades, desafíos y objetivos para brindarles soluciones personalizadas y efectivas.
-                Nuestra dedicación al servicio al cliente nos ha permitido construir relaciones sólidas y duraderas con
-                quienes confían en nosotros para potenciar su negocio y mejorar su vida digital.</p>
-
-            <h3>Un Futuro Conectado</h3>
-
-            <p>En Connect, estamos emocionados por el futuro y las infinitas posibilidades que la tecnología nos ofrece.
-                Continuaremos evolucionando y expandiendo nuestros servicios para adaptarnos a las cambiantes demandas
-                del mundo digital. Nuestro objetivo es ser tu socio confiable en este viaje, proporcionando soluciones
-                avanzadas que impulsen tu éxito en un mundo cada vez más conectado.</p>
+            <div class="row text-center mb-5">
+                <div class="nosotros__info__mision col-lg-6">
+                    <div class="wow animate__animated animate__fadeIn">
+                        <h3>Misión</h3>
+                    </div>
+                    <div class="wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+                        <p>Conectar a individuos y empresas con soluciones tecnológicas avanzadas, simplificando la complejidad y potenciando el éxito en un mundo digital en constante cambio.</p>
+                    </div>
+                </div>
+                <div class="nosotros__info__vision col-lg-6">
+                    <div class="wow animate__animated animate__fadeIn">
+                        <h3>Visión</h3>
+                    </div>
+                    <div class="wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+                        <p>Forjar un futuro donde la tecnología sea accesible y empoderadora para todos, siendo líderes en soluciones informáticas y de telecomunicaciones.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
             <h3 class="m-5 text-center">Nuestra Familia</h3>
-            
-        <div>
-            <div class="titulo">
-                <h2>¿Te interesa trabajar con nosotros?</h2>
-                <h4>Dejanos un mensaje y te enviaremos más información</h4>
-            </div>
-            <form>
-                <div>
-                    <div class="mb-3">
-                        <label class="form-label">Nombre</label>
-                        <input type="name" class="form-control" id="exampleFormControlInput1"
-                            placeholder="">
+            <div>
+                <div class="cards__nosotros">
+                    <div class="card__nosotros">
+                        <div class="card__content">
+                            <img class="card__nosotros__imagen" src="../img/nosotros/person1.jpg" alt="Foto de director ejecutivo">
+                            <h4 class="card__nosotros__h4">Marcos Rosenfeld</h4>
+                            <p class="card__nosotros__cargo">Director Ejecutivo </p>
+                            <p class="card__nosotros__parrafo">Marcos es un visionario y líder empresarial con más de
+                                dos décadas de experiencia en la industria tecnológica. Con una pasión por la
+                                innovación, Marcos ha guiado a la empresa a nuevas alturas, estableciendo una cultura de
+                                excelencia y colaboración que ha impulsado su crecimiento constante.</p>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button class="btn btn-outline-dark">Enviar</button>
-                </div>
-                
-            </form>
-        </div>
+                    <div class="card__nosotros">
+                        <div class="card__content">
+                            <img class="card__nosotros__imagen" src="../img/nosotros/person2.jpg" alt="Foto de director de operaciones">
+                            <h4 class="card__nosotros__h4">Benjamín Roja</h4>
+                            <p class="card__nosotros__cargo">Director de Operaciones</p>
+                            <p class="card__nosotros__parrafo">Benjamín Roja es un ejecutivo altamente enfocada en la
+                                eficiencia y la calidad. Con una sólida experiencia en gestión de operaciones y
+                                logística, Benjamín ha optimizado los procesos internos para garantizar una operación
+                                fluida y un servicio excepcional a nuestros clientes.</p>
+                        </div>
 
+                    </div>
+                    <div class="card__nosotros">
+                        <div class="card__content">
+                            <img class="card__nosotros__imagen" src="../img/nosotros/person3.jpg" alt="Foto de director financiero">
+                            <h4 class="card__nosotros__h4">Dimitri Boog</h4>
+                            <p class="card__nosotros__cargo">Director Financiero</p>
+                            <p class="card__nosotros__parrafo">Dimitri Boog es un líder financiero con una habilidad
+                                innata para el análisis y la estrategia. Su experiencia en gestión financiera y
+                                planificación estratégica ha sido fundamental para el crecimiento sostenible de la
+                                empresa, asegurando una sólida base financiera en un entorno empresarial en constante
+                                cambio.</p>
+                        </div>
+
+                    </div>
+                    <div class="card__nosotros">
+                        <div class="card__content">
+                            <img class="card__nosotros__imagen" src="../img/nosotros/person4.jpg" alt="Foto de directora de marketing">
+                            <h4 class="card__nosotros__h4">Emma Sole</h4>
+                            <p class="card__nosotros__cargo">Directora de Marketing</p>
+                            <p class="card__nosotros__parrafo">Emma Sole es una estratega creativa y orientada a los
+                                resultados en el campo del marketing. Con su experiencia en branding y comunicación,
+                                Emma ha liderado exitosas campañas que han fortalecido la presencia de la empresa en el
+                                mercado y han conectado con audiencias en todo el mundo.</p>
+                        </div>
+
+                    </div>
+                    <div class="card__nosotros">
+                        <div class="card__content">
+                            <img class="card__nosotros__imagen" src="../img/nosotros/person5.jpg" alt="Foto de directora de ventas">
+                            <h4 class="card__nosotros__h4">Lisa Moon</h4>
+                            <p class="card__nosotros__cargo">Directora de Ventas</p>
+                            <p class="card__nosotros__parrafo">Lisa Moon es una líder en ventas con una habilidad
+                                excepcional para construir relaciones y cerrar acuerdos. Su enfoque en la satisfacción
+                                del cliente y su profundo conocimiento del mercado han contribuido a un crecimiento
+                                constante de los ingresos y a relaciones sólidas con nuestros socios comerciales.</p>
+                        </div>
+
+                    </div>
+                    <div class="card__nosotros">
+                        <div class="card__content">
+                            <img class="card__nosotros__imagen" src="../img/nosotros/person6.jpg" alt="Foto de recursos humanos">
+                            <h4 class="card__nosotros__h4">Sophia Jhonson</h4>
+                            <p class="card__nosotros__cargo">Recursos Humanos</p>
+                            <p class="card__nosotros__parrafo">Sophia Jhonson es una profesional en recursos humanos con
+                                un compromiso inquebrantable con el desarrollo del talento. Con su enfoque en la
+                                retención y el desarrollo de los empleados, Sophia ha cultivado un ambiente de trabajo
+                                colaborativo y enriquecedor que impulsa el éxito individual y colectivo de nuestro
+                                equipo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="titulo">
+                    <h2>¿Te interesa trabajar con nosotros?</h2>
+                    <h4>Dejanos un mensaje y te enviaremos más información</h4>
+                </div>
+                <form class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form__button">
+                            <button class="btn boton">Enviar</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </main>
 
     <!---------------------------------->
@@ -135,21 +209,27 @@
     <!---------------------------------->
 
     <footer>
-        <div class="redes">
-            <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-twitter"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-instagram"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-linkedin"></i></a>
-        </div>
         <div class="copy">
+            <img class="mb-1" src="../img/default-monochrome-footer.svg" alt="logotipo gris">
             <p>Connect ©2023</p>
             <p>Todos los derechos reservados</p>
+        </div>
+        <div class="redes">
+            <a href="" class="footer-redes"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
 
 
     <!--Scripts Bootstrap-->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- WOW Scripts -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

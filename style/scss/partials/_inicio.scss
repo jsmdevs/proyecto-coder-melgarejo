@@ -1,15 +1,14 @@
 .banner {
-    background: rgb(0, 67, 133);
-    background: linear-gradient(42deg, rgba(0, 67, 133, 1) 51%, rgba(81, 0, 195, 1) 98%);
+    height: 100vh;
+    background: linear-gradient(337deg, rgb(55, 205, 224) 20%, rgba(0, 97, 177, 1) 100%);
     display: flex;
     align-items: center;
     color: #fff;
-    height: 100vh;
 
     h1 {
         font-weight: 400;
     }
-    
+
 
     .btn-color {
         background-color: #18608C !important;
@@ -24,10 +23,7 @@
 
 
 .section {
-    h3 {
-        font-weight: 700;
-    }
-
+    overflow: hidden;
     .section_content {
         margin-block: 12rem;
 

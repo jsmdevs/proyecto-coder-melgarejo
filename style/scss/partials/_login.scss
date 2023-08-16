@@ -11,17 +11,24 @@
     display: flex;
     align-items: center;
     color: #fff;
-    background-color: $colorPrincipal;
+    background: rgb(0, 205, 233);
+    background: linear-gradient(140deg, rgba(0, 205, 233, 1) 38%, rgba(0, 95, 173, 1) 100%);
     border-radius: 10px;
     padding: 3rem;
-    box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.301);
     gap: 2rem;
 
     form {
         background-color: #fff;
+        box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.301);
         color: #333333;
         border-radius: 10px;
         padding: 2rem;
+
+        .login__button,
+        .register__button {
+            margin: .3rem !important;
+        }
     }
 
     .forgot_password_user {
@@ -33,14 +40,5 @@
             color: #333333 !important;
             margin-inline: 0.2rem;
         }
-    }
-
-    .btn-login {
-        width: 150px;
-        color: #fff;
-        font-weight: 600;
-        background-color: $colorPrincipal;
-        padding: 10px;
-        border-radius: 7px;
     }
 }

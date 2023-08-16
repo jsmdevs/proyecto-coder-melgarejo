@@ -1,38 +1,47 @@
 @import "./variables";
 
 nav {
-    background-color: $colorPrincipal !important;
-    box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.500);
+    background-color: #FFF !important;
     font-weight: 600;
+    border-bottom: solid;
+    border-width: .1rem;
+    border-color: $colorBorderNavbar;
     font-family: 'Roboto', sans-serif;
-    position: fixed !important;
+    position: fixed !important; 
     width: 100% !important;
     top: 0 !important;
-    z-index: 100; 
+    z-index: 100;
+    padding-inline: 20px; 
 
-    a {
-        color: #fff !important;
+    a,i {
+        color: $colorGris!important;
     }
 
     a:hover {
-        color: #dddddd !important;
+        color: $colorPrincipal !important;
     }
 
-    .navbar-shadow {
-        box-shadow: 4px 4px 14px -6px rgba(252, 3, 16, 0.692);
+    i:hover {
+        color: $colorPrincipal !important;
     }
 
     i {
         color: white;
+        transition: 1s;
+
     }
 
-    .navbar-logo {
-        height: 3.5rem;
+    .navbar-nav {
+        color: $colorPrincipal !important;
+    }
+
+    .navbar-logotipo {
+        height: 2.5rem;
         margin: 0.2rem;
     }
 
 
-    .navbar-logo-solo {
+    .navbar-isotipo {
         height: 3.5rem;
         margin: 0.2rem;
     }

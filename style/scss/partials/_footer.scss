@@ -1,27 +1,42 @@
 @import "./variables";
 
 footer {
-    background-color: $colorSecundario;
+    display: flex;
     padding: 2rem;
     margin-top: 80px;
-    color: white;
+    color: hsl(211, 10%, 61%) !important;
     font-size: 10px;
+    font-weight: 600px !important;
     text-align: center;
     
     a {
-        color: #fff;
+        color: hsl(211, 10%, 61%);
+        transition: .5s;
+        &:hover{
+            color: $colorGris;
+        }
     }
+
+    
 
     p {
         margin: 0px !important;
     }
 
-    p {
-        color: white !important;
+    .footer-redes {
+        font-size: 2rem;
+        margin-left: 10px;
     }
 
-    .footer-redes {
-        font-size: 30px;
-        margin-left: 10px;
+    .redes {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .copy {
+        img {
+            width: 9rem;
+        }
     }
 }

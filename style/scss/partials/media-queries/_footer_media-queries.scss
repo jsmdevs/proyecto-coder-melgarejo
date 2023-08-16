@@ -1,17 +1,30 @@
 @media screen and (min-width: 768px) {
     footer {
-        display: flex;
         justify-content: space-between;
 
-
         p {
-            text-align: right;
+            text-align: left;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
+
+        footer {
+            display: flex !important;
+            flex-direction: column;
+        }
         .redes {
-            margin-bottom: 0.4rem;
+            margin-bottom: 1rem;
+            order: 1 !important;
+
+            .footer-redes {
+                margin-inline: 15px;
+                font-size: 2.5rem !important;   
+            }
+        }
+
+        .copy {
+            order: 2 !important;
         }
     }

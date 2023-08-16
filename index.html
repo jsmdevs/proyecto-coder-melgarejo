@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./style/scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +19,23 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- AOS Animations -->
-    <link rel="stylesheet" href="./css/aos.css">
-    <title>Inicio</title>
+    <link rel="stylesheet" href="./style/aos.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/d4412fafd7.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Internet para tu hogar, tu empresa o emprendimiento. Somos expertos en soluciones de telecomunicaciones y tecnología. Ofrecemos servicios de alta velocidad, cloud computing, seguridad cibernética y más para impulsar tu éxito en el mundo digital. ¡Conéctate con el futuro ahora!">
+    <meta name="keywords" content="INTERNET, SOLUCIONES INFORMARICAS, CLOUD COMPUTING, EMPRESA, PYME, EMPRENDER, REDES">
+    <title>Internet para tu hogar y soluciones informáticas | Connect</title>
 </head>
 
 <body>
     <header>
         <!-- Nav tabs -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a href="#"><img class="navbar-logo-solo" src="./img/connect-logo-solo.svg" alt=""></a>
-                <a href="#"><img class="navbar-logo" src="./img/logo-logo.svg" alt=""></a>
+                <div class="navbar_imagotipo">
+                    <a href="#"><img class="navbar-isotipo" src="../img/isotipo.svg" alt="isotipo"></a>
+                    <a href="#"><img class="navbar-logotipo" src="../img/logotipo.svg" alt="logotipo"></a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Inicio</a>
+                            <a class="nav-link activo" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./templates/servicios.html">Servicios</a>
@@ -64,7 +70,7 @@
 
     <main class="inicio">
         <div class="banner">
-            <div class="container">
+            <div class="container banner_content">
                 <div class="row animate__animated animate__fadeIn">
                     <div class="col-md-6 mb-2 ">
                         <h1>Ofrecemos la mejor experiencia de <strong>conexión</strong> del país</h1>
@@ -80,56 +86,62 @@
                 </div>
             </div>
         </div>
-        <div class="container section">
-            <div class="section_content content-1 row">
-                <div class="col-md-6">
-                    <img data-aos="fade-right" data-aos-duration="2000" class="img img-fluid" src="./img/inicio/undraw_online_re_x00h.svg" alt="">
-                </div>
-                <div data-aos="fade-left" data-aos-duration="2000" class="main-texto col-md-6">
-                    <div>
-                        <h3>Velocidad y estabilidad</h3>
-                        <p>En Connect sabemos que la velocidad y estabilidad son fundamentales para tus necesidades de
-                            telecomunicación. Nuestro compromiso es brindarte un servicio excepcional que te permita
-                            mantener vida personal conectada sin interrupciones. Con una infraestructura de vanguardia y
-                            tecnología de última generación, garantizamos una experiencia fluida y confiable.
-                        </p>
+        <div class="section">
+            <div class="container">
+                <div class="section_content content-1 row">
+                    <div class="col-md-6">
+                        <img class="img img-fluid wow animate__animated animate__fadeInLeft" src="./img/inicio/undraw_remotely_-2-j6y.svg" data-wow-duration="1.5s" alt="persona en computadora">
+                    </div>
+                    <div class="main-texto col-md-6 wow animate__animated animate__fadeInRight" data-wow-duration="1.5s">
+                        <div>
+                            <h3>Velocidad y estabilidad</h3>
+                            <p>En Connect sabemos que la velocidad y estabilidad son fundamentales para tus necesidades de
+                                telecomunicación. Nuestro compromiso es brindarte un servicio excepcional que te permita
+                                mantener vida personal conectada sin interrupciones. Con una infraestructura de vanguardia y
+                                tecnología de última generación, garantizamos una experiencia fluida y confiable.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="section_content content-2 row">
-                <div data-aos="fade-right" data-aos-duration="2000" class="main-texto col-md-6 text-2">
-                    <div>
-                        <h3>Baja latencia ideal para juegos y tareas que
-                            necesiten rápidas respuestas</h3>
-                        <p>En Connect, entendemos la importancia de una baja latencia cuando se trata de juegos.Sabemos
-                            que cada milisegundo cuenta y puede marcar la diferencia entre la victoria y la derrota, el
-                            éxito y la frustración.
-                            Además de los juegos, reconocemos que hay tareas profesionales y de negocios que también
-                            requieren una respuesta instantánea. Con nuestra baja latencia, podrás trabajar en tiempo
-                            real, colaborar con colegas en diferentes ubicaciones y acceder a aplicaciones en la nube
-                            sin demoras molestas.
-                        </p>
+            <div class="container">
+                <div class="section_content content-2 row">
+                    <div class="main-texto col-md-6 text-2 wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s">
+                        <div>
+                            <h3>Baja latencia ideal para juegos y tareas que
+                                necesiten rápidas respuestas</h3>
+                            <p>En Connect, entendemos la importancia de una baja latencia cuando se trata de juegos.Sabemos
+                                que cada milisegundo cuenta y puede marcar la diferencia entre la victoria y la derrota, el
+                                éxito y la frustración.
+                                Además de los juegos, reconocemos que hay tareas profesionales y de negocios que también
+                                requieren una respuesta instantánea. Con nuestra baja latencia, podrás trabajar en tiempo
+                                real, colaborar con colegas en diferentes ubicaciones y acceder a aplicaciones en la nube
+                                sin demoras molestas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 img-2 wow animate__animated animate__fadeInRight" data-wow-duration="1.5s">
+                        <img class="img img-desktop img-fluid" class="section_content item"
+                            src="./img/inicio/undraw_gaming_re_cma2.svg" alt="mando de juego">
                     </div>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="2000" class="col-md-6 img-2">
-                    <img class="img img-desktop img-fluid" class="section_content item"
-                        src="./img/inicio/undraw_gaming_re_cma2.svg" alt="">
-                </div>
             </div>
-            <div class="section_content content-3 row">
-                <div data-aos="fade-right" data-aos-duration="2000" class="col-md-6">
-                    <img class="img img-fluid" class="section_content" src="./img/inicio/undraw_server_cluster_jwwq.svg"
-                        alt="">
-                </div>
-                <div data-aos="fade-left" data-aos-duration="2000" class="main-texto col-md-6">
-                    <div>
-                        <h3>Soluciones informáticas avanzadas: cloud computing, servidores a medida y más</h3>
-                        <p>En Connect, nos enorgullecemos de ofrecer una amplia gama de servicios de
-                            soluciones informáticas diseñados para impulsar tu negocio hacia el éxito en el mundo
-                            digital. Nuestro equipo altamente capacitado de expertos en tecnología trabaja
-                            incansablemente para proporcionarte soluciones personalizadas y eficientes que satisfagan
-                            tus necesidades específicas.
-                        </p>
+            <div class="container">
+                <div class="section_content content-3 row">
+                    <div  class="col-md-6 wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s">
+                        <img class="img img-fluid" class="section_content" src="./img/inicio/undraw_server_cluster_jwwq.svg"
+                            alt="servidor y dispositivos">
+                    </div>
+                    <div class="main-texto col-md-6 wow animate__animated animate__fadeInRight" data-wow-duration="1.5s">
+                        <div>
+                            <h3>Soluciones informáticas avanzadas: cloud computing, servidores a medida y más</h3>
+                            <p>En Connect, nos enorgullecemos de ofrecer una amplia gama de servicios de
+                                soluciones informáticas diseñados para impulsar tu negocio hacia el éxito en el mundo
+                                digital. Nuestro equipo altamente capacitado de expertos en tecnología trabaja
+                                incansablemente para proporcionarte soluciones personalizadas y eficientes que satisfagan
+                                tus necesidades específicas.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,15 +153,16 @@
     <!---------------------------------->
 
     <footer>
-        <div class="redes">
-            <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-twitter"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-instagram"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-linkedin"></i></a>
-        </div>
         <div class="copy">
+            <img class="mb-1" src="../img/default-monochrome-footer.svg" alt="logotipo gris">
             <p>Connect ©2023</p>
             <p>Todos los derechos reservados</p>
+        </div>
+        <div class="redes">
+            <a href="" class="footer-redes"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
 
@@ -162,7 +175,11 @@
     <script>
         AOS.init();
     </script>
-    <script src="./js/aos-out.js"></script>
+    <!-- WOW Scripts -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

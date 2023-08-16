@@ -3,14 +3,14 @@
 .cards__servicios {
     gap: 1rem;
     --bs-gutter-x: 0 !important;
+
     .card__servicios {
         border-radius: 7px;
         font-size: 0.8rem;
         padding: 0px !important;
         border: solid;
-        border-width: 0.2rem;
-        border-color: $colorPrincipal;
-        box-shadow: 4px 4px 14px -6px rgba(0, 0, 0, 0.75);
+        border-width: 0.1rem;
+        border-color: $colorGrisClaro;
 
         .card__items {
             display: grid;
@@ -30,37 +30,27 @@
 
         p {
 
-            border-bottom: $colorPrincipal;
+            color: $colorGris !important;
         }
 
         .card__servicios__titulo {
             color: #fff;
             padding: 1rem;
             background-color: $colorPrincipal;
+            border-top-left-radius: 7px !important;
+            border-top-right-radius: 7px !important;
         }
 
         .card__servicios__precio {
 
             display: flex;
             justify-content: center;
+
             p {
                 font-size: 2.5rem;
+                margin: 0px;
                 font-weight: 400 !important;
-            }
-        }
-
-        .card__servicios__button {
-            display: flex;
-            justify-content: center;
-
-            button {
-                color: white;
-                font-weight: 600;
-                background-color: $colorPrincipal;
-                border: none;
-                padding: 10px;
-                margin-bottom: 1rem;
-                border-radius: 7px;
+                color: $colorGris !important;
             }
         }
 
@@ -69,6 +59,9 @@
         .card__servicios__parrafo {
             margin-bottom: 15px;
         }
-    }
 
+        button {
+            margin: 2rem;
+        }
+    }
 }

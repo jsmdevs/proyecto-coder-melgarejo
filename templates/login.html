@@ -16,16 +16,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../style/bootstrap/bootstrap.min.css">
-    <title>Inicio</title>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/d4412fafd7.js" crossorigin="anonymous"></script>
+
+    <title>Iniciar sesión | Connect</title>
+    <meta name="description" content="Inicia sesión o registrate para monitorear tu plan de internet.">
+    <meta name="keywords" content="INTERNET, SOLUCIONES INFORMARICAS, CLOUD COMPUTING, EMPRESA, PYME, EMPRENDER, REDES">
 </head>
 
 <body>
     <header>
         <!-- Nav tabs -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a href="../index.html"><img class="navbar-logo-solo" src="../img/connect-logo-solo.svg" alt=""></a>
-                <a href="../index.html"><img class="navbar-logo" src="../img/logo-logo.svg" alt=""></a>
+                <div class="navbar_imagotipo">
+                    <a href="../index.html"><img class="navbar-isotipo" src="../img/isotipo.svg" alt="isotipo"></a>
+                    <a href="../index.html"><img class="navbar-logotipo" src="../img/logotipo.svg" alt="logotipo"></a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
-                            <a class="nav-link active" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../templates/servicios.html">Servicios</a>
@@ -45,7 +54,7 @@
                             <a class="nav-link" href="../templates/ayuda.html">Ayuda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link m-0 nav-link-login" href="../templates/login.html">Iniciar Sesión <i
+                            <a class="nav-link m-0 nav-link-login activo" href="../templates/login.html">Iniciar Sesión <i
                                     class="bi bi-person"></i></a>
                         </li>
                     </ul>
@@ -59,8 +68,8 @@
     <!---------------------------------->
     
     <main class="container login">
-        <div class="card__login row">
-            <div class="col main-texto login_titulo_min_990">
+        <div class="card__login row animate__animated animate__fadeIn">
+            <div class="col main-texto login_titulo_min_990 wow">
                 <h2><strong>Conectate</strong> a la mejor red del país</h2>
             </div>
             <form class="col">
@@ -80,9 +89,9 @@
                         <a href="">Olvidé mi contraseña</a>
                     </div>
                 </div>
-                <div class="button__card__login text-center disp">
-                    <button type="submit" class="btn btn-login">Iniciar Sesión</button>
-                    <button type="submit" class="btn btn-login">Registrarse</button>
+                <div class="text-center login__register__button">
+                    <button type="submit" class="btn boton login__button">Iniciar Sesión</button>
+                    <button type="submit" class="btn boton register__button">Registrarse</button>
                 </div>
             </form>
             <div class="col main-texto login_titulo_max_990">
@@ -98,20 +107,26 @@
     <!---------------------------------->
 
     <footer>
-        <div class="redes">
-            <a href="" class="footer-redes"><i class="bi bi-facebook"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-twitter"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-instagram"></i></a>
-            <a href="" class="footer-redes"><i class="bi bi-linkedin"></i></a>
-        </div>
         <div class="copy">
+            <img class="mb-1" src="../img/default-monochrome-footer.svg" alt="logotipo gris">
             <p>Connect ©2023</p>
             <p>Todos los derechos reservados</p>
+        </div>
+        <div class="redes">
+            <a href="" class="footer-redes"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="footer-redes"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
 
     <!--Scripts Bootstrap-->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- WOW Scripts -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
