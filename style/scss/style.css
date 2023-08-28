@@ -112,6 +112,7 @@ footer a:hover {
 }
 footer p {
   margin: 0px !important;
+  color: hsl(211, 10%, 61%) !important;
 }
 footer .footer-redes {
   font-size: 2rem;
@@ -132,6 +133,7 @@ footer .copy img {
   display: flex;
   align-items: center;
   color: #fff;
+  gap: 2rem;
 }
 .banner h1 {
   font-weight: 400;
@@ -433,6 +435,9 @@ form {
 }
 @media screen and (max-width: 991px) {
   .contacto__medios {
+    text-align: center;
+  }
+  .titulo_preguntas {
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
